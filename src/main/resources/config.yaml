@@ -6,4 +6,3 @@ random:
   port: "443"
   protocol: "HTTPS"
   basePath: "api/"
-  

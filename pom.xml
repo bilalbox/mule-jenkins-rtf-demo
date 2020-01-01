@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>${anypoint.organization_id}</groupId>
+	<groupId>2b5a00b9-1756-4461-ae5c-98e53162842d</groupId>
 	<artifactId>cicd-rtf-demo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
@@ -80,7 +79,7 @@
 		<repository>
 			<id>ExchangeRepo</id>
 			<name>Corporate Repository</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/${anypoint.organization_id}/maven</url>
+			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/2b5a00b9-1756-4461-ae5c-98e53162842d/maven</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
