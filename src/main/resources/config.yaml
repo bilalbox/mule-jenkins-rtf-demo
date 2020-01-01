@@ -1,0 +1,9 @@
+http:
+  port: "8081"
+  
+random:
+  host: "uinames.com"
+  port: "443"
+  protocol: "HTTPS"
+  basePath: "api/"
+  

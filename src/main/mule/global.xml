@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<configuration-properties doc:name="Configuration properties"
+		doc:id="283123be-0e04-47ba-9e95-8819dfb8c9c0" file="config.yaml" />
+	<http:listener-config name="HTTP_Listener_config"
+		doc:name="HTTP Listener config" doc:id="731e5a70-342c-470b-94a9-0b76fa4eda9e">
+		<http:listener-connection host="0.0.0.0"
+			port="${http.port}" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_Random_cfg" doc:name="HTTP Request configuration" doc:id="020e3828-f7d3-4373-90ab-4e25399e8193">
+		<http:request-connection protocol="${random.protocol}" host="${random.host}" port="${random.port}" />
+	</http:request-config>
+</mule>
