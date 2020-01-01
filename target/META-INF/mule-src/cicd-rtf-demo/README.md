@@ -1,12 +1,11 @@
-# IRS MuleSoft Docker Lab
-> MuleSoft lab infrastructure for training Infinite folks
+# Jenkins RTF Lab
 
-This deploys a simple "Hello World" application to MuleSoft CloudHub using Jenkins Blue Ocean pipeline. It requires an active [AnyPoint Platform](https://anypoint.mulesoft.com) account. of docker containers to create the infrastructure required to support Infinite Resource Solutions' MuleSoft training labs. What is docker? See [Learning](#learning) at the end of this document.
+> MuleSoft lab infrastructure for training 
 
-
+This deploys a simple "Hello World" application to MuleSoft Runtime Fabric using Jenkins pipeline.
 
 ### REQUIREMENTS
-* [AnyPoint Platform](https://anypoint.mulesoft.com/login/signup) Trial Account
+* [AnyPoint Platform](https://anypoint.mulesoft.com/login/signup) Paid Account w/ Runtime Fabric entitlement
 * [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
 ### USAGE
@@ -14,12 +13,12 @@ Once you have installed Docker Desktop and created a trial account with AnyPoint
 
 1. Open your favorite terminal emulator and run the commands below:
 ```BASH
-docker run -p 8080:8080 --name jenkins_blue -d jenkinsci/blueocean
+docker run -p 8080:8080 --name jenkins -d jenkins/jenkins:lts
 ```
 
 2. The jenkins security token required to authenticate to the web interface for the first time will be dynamically generated during the container boot and displayed in the logs. Enter the command below to view the container logs:
 ```BASH
-docker container logs jenkins_blue
+docker container logs jenkins
 ```
 The output looks something like this:
 ```
@@ -36,4 +35,4 @@ Copy that value to your clipboard.
 
 3. Navigate to http://localhost:8080 and enter the security token you retrieved from the container logs in step #2.
 
-4. Complete Jenkins installation and configuration (COMING SOON!)
+4. Complete Jenkins installation and configuration

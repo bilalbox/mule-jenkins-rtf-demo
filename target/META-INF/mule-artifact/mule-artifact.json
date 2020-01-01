@@ -5,7 +5,7 @@
   ],
   "secureProperties": [],
   "redeploymentEnabled": true,
-  "name": "com.mycompany:cicd-rtf-demo:1.0.0-SNAPSHOT",
+  "name": "2b5a00b9-1756-4461-ae5c-98e53162842d:cicd-rtf-demo:1.0.0-SNAPSHOT",
   "minMuleVersion": "4.2.2",
   "requiredProduct": "MULE_EE",
   "classLoaderModelLoaderDescriptor": {

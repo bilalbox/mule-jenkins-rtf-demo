@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "artifactCoordinates": {
-    "groupId": "com.mycompany",
+    "groupId": "2b5a00b9-1756-4461-ae5c-98e53162842d",
     "artifactId": "cicd-rtf-demo",
     "version": "1.0.0-SNAPSHOT",
     "type": "jar",
